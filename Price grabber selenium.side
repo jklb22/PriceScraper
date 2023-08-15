@@ -1,0 +1,56 @@
+{
+  "id": "99a3eec2-f72b-4deb-b920-0ce0f4a4bdd3",
+  "version": "2.0",
+  "name": "Price grabber",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "0da9fe66-5e50-46cb-8b0d-141d8baf221e",
+    "name": "Price Grabber",
+    "commands": [{
+      "id": "fe906b4e-0e0e-4625-ba5a-f9007b84776b",
+      "comment": "",
+      "command": "open",
+      "target": "/Introduction-Quantitative-Macroeconomics-Using-State/dp/0128122196",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24ad1a8f-37e4-43d1-bd19-66a2adc4db48",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1380x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ae83ff8-706d-4a59-9e48-51d2303087fe",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#newAccordionRow_0 h5",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div/div/div[2]/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "X"
+    }, {
+      "id": "259effc6-531c-41c6-9f7b-af73f05fc0fb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "369a6e91-9a52-4831-9860-98b80877cda1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0da9fe66-5e50-46cb-8b0d-141d8baf221e"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": []
+}
